@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SampleResearchKit
 //
-//  Created by Meivn Mathew on 2/5/2017.
+//  Created by Meivn Mathew  lolo on 2/5/2017.
 //  Copyright © 2017 AppCoda. All rights reserved.
 //
 
