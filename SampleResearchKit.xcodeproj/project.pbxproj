@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		705972E3203A2B050007E560 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705972E0203A2AFD0007E560 /* ResearchKit.framework */; };
+		D30E036B203A67CA002C8A56 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30E0368203A67C3002C8A56 /* ResearchKit.framework */; };
+		D30E036C203A67CA002C8A56 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D30E0368203A67C3002C8A56 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F42C7EB71EB8E09300E448F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C7EB61EB8E09300E448F2 /* AppDelegate.swift */; };
 		F42C7EB91EB8E09300E448F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C7EB81EB8E09300E448F2 /* ViewController.swift */; };
 		F42C7EBC1EB8E09300E448F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42C7EBA1EB8E09300E448F2 /* Main.storyboard */; };
@@ -33,13 +34,49 @@
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
 		};
+		D30E0367203A67C3002C8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30E0361203A67C3002C8A56 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		D30E0369203A67C3002C8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30E0361203A67C3002C8A56 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		D30E036D203A67CA002C8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30E0361203A67C3002C8A56 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D30E036F203A67CA002C8A56 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D30E036C203A67CA002C8A56 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		20B6E9DDEE3BD4145F52E19C /* Pods-SampleResearchKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleResearchKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleResearchKit/Pods-SampleResearchKit.release.xcconfig"; sourceTree = "<group>"; };
 		5114C34E070FACFBD39F9CAA /* Pods-SampleResearchKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleResearchKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleResearchKit/Pods-SampleResearchKit.debug.xcconfig"; sourceTree = "<group>"; };
 		602439E7E359A0A73D24F738 /* Pods_SampleResearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleResearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		705972D9203A2AFC0007E560 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Desktop/Research Project/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		D30E0361203A67C3002C8A56 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		F42C7EB31EB8E09300E448F2 /* SampleResearchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleResearchKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42C7EB61EB8E09300E448F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F42C7EB81EB8E09300E448F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				705972E3203A2B050007E560 /* ResearchKit.framework in Frameworks */,
+				D30E036B203A67CA002C8A56 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +119,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D30E0362203A67C3002C8A56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D30E0368203A67C3002C8A56 /* ResearchKit.framework */,
+				D30E036A203A67C3002C8A56 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E0403C5E8980C944CFED4D71 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +140,7 @@
 		F42C7EAA1EB8E09300E448F2 = {
 			isa = PBXGroup;
 			children = (
+				D30E0361203A67C3002C8A56 /* ResearchKit.xcodeproj */,
 				F42C7EB51EB8E09300E448F2 /* SampleResearchKit */,
 				F42C7EB41EB8E09300E448F2 /* Products */,
 				E0403C5E8980C944CFED4D71 /* Pods */,
@@ -138,10 +185,12 @@
 				F42C7EB11EB8E09300E448F2 /* Resources */,
 				20E45B53818AF0D3AC5CEEA7 /* [CP] Embed Pods Frameworks */,
 				42A8C4E7FA78ACF6C105E1D8 /* [CP] Copy Pods Resources */,
+				D30E036F203A67CA002C8A56 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D30E036E203A67CA002C8A56 /* PBXTargetDependency */,
 			);
 			name = SampleResearchKit;
 			productName = SampleResearchKit;
@@ -160,7 +209,7 @@
 				TargetAttributes = {
 					F42C7EB21EB8E09300E448F2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 85LVSLKBU8;
+						DevelopmentTeam = QFG9FNPVR4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -180,6 +229,10 @@
 				{
 					ProductGroup = 705972DA203A2AFC0007E560 /* Products */;
 					ProjectRef = 705972D9203A2AFC0007E560 /* ResearchKit.xcodeproj */;
+				},
+				{
+					ProductGroup = D30E0362203A67C3002C8A56 /* Products */;
+					ProjectRef = D30E0361203A67C3002C8A56 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -202,6 +255,20 @@
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
 			remoteRef = 705972E1203A2AFD0007E560 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D30E0368203A67C3002C8A56 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = D30E0367203A67C3002C8A56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D30E036A203A67C3002C8A56 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = D30E0369203A67C3002C8A56 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -281,6 +348,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D30E036E203A67CA002C8A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = D30E036D203A67CA002C8A56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F42C7EBA1EB8E09300E448F2 /* Main.storyboard */ = {
@@ -399,11 +474,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5114C34E070FACFBD39F9CAA /* Pods-SampleResearchKit.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 85LVSLKBU8;
+				DEVELOPMENT_TEAM = QFG9FNPVR4;
 				INFOPLIST_FILE = SampleResearchKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.SampleResearchKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mevinmathew.SampleResearchKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -413,11 +489,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20B6E9DDEE3BD4145F52E19C /* Pods-SampleResearchKit.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 85LVSLKBU8;
+				DEVELOPMENT_TEAM = QFG9FNPVR4;
 				INFOPLIST_FILE = SampleResearchKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.SampleResearchKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mevinmathew.SampleResearchKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
