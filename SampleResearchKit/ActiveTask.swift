@@ -10,5 +10,5 @@ import Foundation
 import ResearchKit
 
 public var ActiveTask: ORKOrderedTask {
-    return ORKOrderedTask.shortWalk(withIdentifier: "Gait Test", intendedUseDescription: "Measure Gait", numberOfStepsPerLeg: 20, restDuration: 60.0, options: ORKPredefinedTaskOption())
+    return ORKOrderedTask.shortWalk(withIdentifier: "ShortWalkTask", intendedUseDescription: "Measure Gait", numberOfStepsPerLeg: 20, restDuration: 60.0, options: ORKPredefinedTaskOption())
 }

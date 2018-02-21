@@ -37,17 +37,22 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
         let taskViewController = ORKTaskViewController(task: ActiveTask, taskRun: nil)
         taskViewController.delegate = self
         present(taskViewController, animated: true, completion: nil)
-        NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let defaultFileManager = FileManager.default
+        let documentDirectoryURL = defaultFileManager.urls(for: .documentDirectory, in: .userDomainMask)
+        taskViewController.outputDirectory = documentDirectoryURL.first!
+        //NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
     }
     
     
     // MARK: - ORKTaskViewControllerDelegate Protocol
     
     func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
+        if(reason != ORKTaskViewControllerFinishReason.failed){
+            taskViewController.dismiss(animated: true, completion: nil)
+        }
         
         
-        
-        taskViewController.dismiss(animated: true, completion: nil)
+        //taskViewController.dismiss(animated: true, completion: nil)
     }
 
 }
