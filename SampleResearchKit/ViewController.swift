@@ -49,6 +49,8 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
     func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
         if(reason != ORKTaskViewControllerFinishReason.failed){
             taskViewController.dismiss(animated: true, completion: nil)
+            let results = taskViewController.result.results
+            print("\(results)")
         }
         
         
